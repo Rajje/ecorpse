@@ -1,0 +1,56 @@
+<!-- 
+XML för publicering (DM2517) – Projekt, DTD-mall
+av Rasmus Berggrén (19891002-0398), Arvid Sätterkvist (19910315-4432)
+CMETE, KTH, 2014
+-->
+
+<!ELEMENT ecorpse (language, menu?, stories?, characters?, users?)>
+
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT menu (menuitem+)>
+<!ELEMENT menuitem (#PCDATA)>
+
+<!ELEMENT stories (story+)>
+<!ELEMENT story (post+, characterInStory*, points)>
+<!ELEMENT post (writtenBy, date, content)>
+<!ELEMENT characterInStory EMPTY>
+<!ELEMENT points (#PCDATA)>
+<!ELEMENT writtenBy EMPTY>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+
+<!ELEMENT characters (character+)>
+<!ELEMENT character (name, description?, points)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+
+<!ELEMENT users (user+)>
+<!ELEMENT user (registered, email, avatar?)>
+<!ELEMENT registered (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT avatar (#PCDATA)>
+
+
+<!ATTLIST menuitem
+	id ID #REQUIRED
+>
+<!ATTLIST story
+	id ID #REQUIRED
+	totalNumberOfPosts CDATA #REQUIRED
+	completed CDATA #REQUIRED
+>
+<!ATTLIST post
+	number ID #REQUIRED
+>
+<!ATTLIST characterInStory
+	id IDREF #REQUIRED
+>
+<!ATTLIST writtenBy
+	user IDREF #REQUIRED
+>
+<!ATTLIST character
+	id ID #REQUIRED
+>
+<!ATTLIST user
+	username ID #REQUIRED
+>

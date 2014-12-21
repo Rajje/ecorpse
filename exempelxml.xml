@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE ecorpse SYSTEM "http://xml.csc.kth.se/~rberggre/DM2517/projekt/corpse_dtd.dtd">
+
+<!-- Innehåller exempel på alla tänkbara element som ett genererat XML-dokument från vår databas kan få -->
+
+<ecorpse>
+
+	<language>
+		swedish
+	</language>
+
+	<menu>
+		<menuitem id="M1">
+			Flöde
+		</menuitem>
+		<menuitem id="M2">
+			Skrivna
+		</menuitem>
+		<menuitem id="M3">
+			Karaktärer
+		</menuitem>
+		<menuitem id="M4">
+			Mina historier
+		</menuitem>
+	</menu>
+
+	<stories>
+		<story id="S1" totalNumberOfPosts="3" completed="true">
+			<post number="S1P1">
+				<writtenBy user="zorkats85"/>
+				<date>2014-11-18 17.49</date>
+				<content>
+					Det var en gång som hette Mats.
+				</content>
+			</post>
+			<post number="S1P2">
+				<writtenBy user="ThatGuyWhoHatesWelding"/>
+				<date>2014-11-18 17.50</date>
+				<content>
+					Mats var sandad. 
+				</content>
+			</post>
+			<post number="S1P3">
+				<writtenBy user="XXXshadowWarriorXXX"/>
+				<date>2014-11-18 18.05</date>
+				<content>
+					En gång dog Mats. 
+				</content>
+			</post>
+			<characterInStory id="C1"/>
+			<characterInStory id="C2"/>
+			<points>
+				0
+			</points>
+		</story>
+	</stories>
+
+	<characters>
+		<character id="C1">
+			<name>Mats</name>
+			<description>
+				Mats är en man som är en gång och han blablabal ...
+			</description>
+			<points>
+				0
+			</points>
+		</character>
+		<character id="C2">
+			<name>Berit</name>
+			<description>
+				Svetsare. Bjoij ojoj det är så.
+			</description>
+			<points>
+				0
+			</points>
+		</character>
+
+	</characters>
+
+	<users>
+		<user username="zorkats85">
+			<registered>
+				2014-11-11 11:11
+			</registered>
+			<email>
+				asdf@asdf.as
+			</email>
+			<avatar>
+				16510f650b
+			</avatar>
+		</user>
+		<user username="ThatGuyWhoHatesWelding">
+			<registered>
+				2014-11-12 11:11
+			</registered>
+			<email>
+				ggg@gg.gg
+			</email>
+			<avatar>
+				16510f650b8
+			</avatar>
+		</user>
+		<user username="XXXshadowWarriorXXX">
+			<registered>
+				2014-11-01 11:11
+			</registered>
+			<email>
+				hell6666@qwerty.gov
+			</email>
+			<avatar>
+				16510f650b84444
+			</avatar>
+		</user>
+	</users>
+
+</ecorpse>
